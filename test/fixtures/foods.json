@@ -1,0 +1,50 @@
+{
+  "frutas": [
+    "Banana",
+    "Maçã",
+    "Laranja",
+    "Abacate",
+    "Manga",
+    "Mamão",
+    "Morango",
+    "Melancia",
+    "Pera",
+    "Uva"
+  ],
+  "legumes_verduras": [
+    "Brócolis",
+    "Espinafre",
+    "Couve",
+    "Alface",
+    "Tomate",
+    "Cenoura",
+    "Beterraba",
+    "Abobrinha",
+    "Chuchu",
+    "Repolho"
+  ],
+  "proteinas": [
+    "Peito de frango",
+    "Ovo",
+    "Carne bovina magra",
+    "Tofu",
+    "Atum",
+    "Salmão",
+    "Lentilha",
+    "Grão-de-bico",
+    "Queijo cottage",
+    "Iogurte natural"
+  ],
+  "carboidratos": [
+    "Arroz integral",
+    "Batata doce",
+    "Macarrão integral",
+    "Aveia",
+    "Pão integral",
+    "Quinoa",
+    "Inhame",
+    "Mandioca",
+    "Milho",
+    "Cuscuz"
+  ]
+}
