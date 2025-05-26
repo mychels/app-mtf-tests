@@ -87,9 +87,9 @@ Este projeto permite executar os testes de duas formas:
    Configure as seguintes variáveis:
 
    ```bash
-   export BROWSERSTACK_USERNAME="seu_username"
-   export BROWSERSTACK_ACCESS_KEY="sua_access_key"
-   export BROWSERSTACK_APP="codigo_do_app_importado"
+   BROWSERSTACK_USERNAME="seu_username"
+   BROWSERSTACK_ACCESS_KEY="sua_access_key"
+   BROWSERSTACK_APP="codigo_do_app_importado"
    ```
 
 3. **Execute os testes**:
