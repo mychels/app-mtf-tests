@@ -33,27 +33,69 @@ Este projeto utiliza as seguintes tecnologias:
    npm install
    ```
 
-3. **Conecte um dispositivo físico ao seu computador, ou utilize um emulador**:
+---
 
-   Abra o cmd, e digite o comando abaixo para saber o id do seu dispositivo/emulador.
+## Formas de Execução dos Testes
+
+Este projeto permite executar os testes de duas formas:
+
+- ✅ **Execução Local**: usando emulador ou dispositivo físico.
+- ☁️ **Execução Remota**: utilizando o BrowserStack.
+
+---
+
+## ✅ Execução Local (Emulador ou Dispositivo Físico)
+
+1. **Conecte um dispositivo físico ou utilize um emulador**:
+
+   Abra o terminal (cmd), e digite o comando abaixo para listar os dispositivos/emuladores disponíveis:
 
    ```bash
    adb devices
-
    ```
 
-4. **Altere o arquivo wdio.conf.js**:
+   Copie o ID do dispositivo ou emulador que deseja utilizar.
 
-   Acesse o arquivo, e substitua a configuração abaixo, inserindo o id do seu dispositivo/emulador.
+2. **Altere a configuração no arquivo `wdio.conf.js`**:
 
-   ```bash
+   No arquivo `wdio.conf.js`, substitua a configuração abaixo pelo ID do seu dispositivo/emulador:
+
+   ```javascript
    "appium:udid": "ID DO DISPOSITIVO"
    ```
 
-## Executando os Testes
+3. **Execute os testes**:
 
-Para rodar os testes do projeto, use o seguinte comando.
+   Utilize o comando abaixo para iniciar a execução dos testes localmente:
 
-```bash
-npx wdio
-```
+   ```bash
+   npx wdio
+   ```
+
+---
+
+## ☁️ Execução Remota (BrowserStack)
+
+1. **Configuração do BrowserStack**:
+
+   - Crie uma conta no [BrowserStack](https://www.browserstack.com/).
+   - Obtenha suas credenciais: `username` e `access_key`.
+   - Importe o apk do app no BrowserStack, e copie o código gerado.
+
+2. **Configure o arquivo .env, usando como base o arquivo .env.example**:
+
+   Configure as seguintes variáveis:
+
+   ```bash
+   export BROWSERSTACK_USERNAME="seu_username"
+   export BROWSERSTACK_ACCESS_KEY="sua_access_key"
+   export BROWSERSTACK_APP="codigo_do_app_importado"
+   ```
+
+3. **Execute os testes**:
+
+   Após configurar, execute o comando abaixo:
+
+   ```bash
+   npm run test-bs
+   ```
